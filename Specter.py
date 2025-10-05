@@ -20,13 +20,13 @@ def show_menu():
     print("[5] > accounts.json (lunarclient)") # works
     print("[6] > Модификации") #works
     print("[7] > TopkaProduct") # works
-    print("[8] > Донат") # works
     print("[9] > Автор") # works
     print("[10] > Гитхаб") # nn
 
 
 def lunar():
     print("https://www.dropbox.com/scl/fi/m62apm8aqcwrte2zqayjr/accounts.json?rlkey=tc41zq66uuikhmrcqdfy920zb&st=m4jy1pdx&dl=1 \n(вставь в браузер)")
+    input("Нажмите enter что-б выйти")
 
 def mainchistilka():
         disk_ce = os.path.join("C\\")
@@ -46,7 +46,7 @@ def mainchistilka():
                     shutil.rmtree(deltaclient)
                     print("[+] Папка чита удалена (deltaclient).")
                 else:
-                    print("[!] Папка Чита не найдена (deltaclient).")
+                    print("[!] Папка чита не нашлась (deltaclient).")
 
 
 
@@ -91,12 +91,12 @@ def cleaner_barik():
 
 def cleaner_expa():
     expansiec = os.path.join(mcpath, "expensive")
-    print("[!] Успешно, baritone и т.д удалёны!")
+    print("[!] Успешно, baritone и т.д удалены!")
     try:
         shutil.rmtree(baritone_path)
         shutil.rmtree(expansiec)
     except Exception as e:
-        print(f"[Ошибка] Не удалось удалить файл baritone: {e}")
+        print(f" Не удалось удалить файл baritone: {e}")
 
     input("Нажмите Enter для выхода...")
 
@@ -120,10 +120,6 @@ def temp_cleaner():
     input("Нажмите Enter для выхода...")
 
 
-def donat():
-    print("https://donatello.to/turik1337 (Украина) \nhttps://www.donationalerts.com/r/txrik13378")
-    input("Нажмите Enter для выхода...")
-
 
 username = getpass.getuser()
 mcpath = os.path.join("C:\\Users", username, "AppData", "Roaming", ".minecraft")
@@ -140,7 +136,8 @@ elif vibor == "2":
 elif vibor == "3":
     temp_cleaner()
 elif vibor == "4":
-    print("Bedrock: t.me/rpParkipack \nJava: ")
+    print("Bedrock & java: t.me/rpParkipack  ")
+    input("by @")
 elif vibor == "5":
     lunar()
 elif vibor == "8":
@@ -149,11 +146,16 @@ elif vibor == "9":
    cleaner_barik()
 elif vibor == "7":
     print("@topkamod_bot")
+    input("Нажмите enter что-б выйти")
 
 elif vibor == "6":
     print("t.me/collapseloader \nt.me/download_cheats")
+    input("Нажмите enter что-б выйти")
 
 elif vibor == "10":
     print("https://github.com/utcsvc/Specter-Tool")
+    input("Нажмите enter что-б выйти")
 else:
     print("[!] Неизвестный выбор.")
+    input("Нажмите enter что-б выйти")
+
