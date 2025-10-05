@@ -14,7 +14,7 @@ def spectertop():
 
 def show_menu():
     print("\033[92m[1] > Очистить файлы в диске С: (.wexside, ExcellentRecode и т.д)") #zzzz
-    print("[2] > Очистить файлы в папке .minecraft") # workaet
+    print("[2] > Очистить файлы в папке .minecraft (котлован не очищаит)") # workaet
     print("[3] > Очистить %temp%") # works
     print("[4] > Ресурспаки") # works
     print("[5] > accounts.json (lunarclient)") # works
@@ -158,4 +158,5 @@ elif vibor == "10":
 else:
     print("[!] Неизвестный выбор.")
     input("Нажмите enter что-б выйти")
+
 
